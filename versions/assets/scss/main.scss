@@ -1,0 +1,55 @@
+@mixin breakpoint($point) {
+  @if $point == xxx {
+    @media (max-width: 1200px) {
+      @content;
+    }
+  } @else if $point == xx {
+    @media (max-width: 991px) {
+      @content;
+    }
+  } @else if $point == lx {
+    @media (max-width: 762px) {
+      @content;
+    }
+  } @else if $point == l {
+    @media (max-width: 749px) {
+      @content;
+    }
+  } @else if $point == m {
+    @media (max-width: 690px) {
+      @content;
+    }
+  } @else if $point == s {
+    @media (max-width: 570px) {
+      @content;
+    }
+  } @else if $point == ss {
+    @media (max-width: 546px) {
+      @content;
+    }
+  }
+}
+
+@mixin transition($sec) {
+  -webkit-transition: all $sec ease-in-out;
+  -moz-transition: all $sec ease-in-out;
+  -ms-transition: all $sec ease-in-out;
+  -o-transition: all $sec ease-in-out;
+  transition: all $sec ease-in-out;
+}
+
+@import "sub/general-setting";
+@import "sub/header";
+@import "sub/menu";
+@import "sub/about";
+@import "sub/resume";
+@import "sub/progress-bar";
+@import "sub/portfolio";
+@import "sub/blog";
+@import "sub/contacts";
+@import "sub/copyright";
+@import "sub/404-page";
+@import "sub/pagination";
+@import "sub/scroll-to-top";
+@import "sub/preloade-section-style";
+@import "sub/widget";

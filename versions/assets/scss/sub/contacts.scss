@@ -1,0 +1,31 @@
+/*-----------------------
+    Contacts
+------------------------*/
+.contact-section {
+  background-color: $footer-bg;
+  padding-bottom: 0;
+
+  .section-title {
+    color: $main-color-theme;
+    margin-bottom: 50px;
+  }
+
+  .social-icons {
+    a {
+      color: $second-color;
+      text-align: center;
+      font: 400 14px/42px UkieFont;
+      display: inline-block;
+      width: 42px;
+      height: 42px;
+      background-color: $main-color-hover-theme;
+      border-radius: 50%;
+      margin: 20px 8px 20px 0;
+      &:hover, &:focus, &:active {
+        color: #ffffff;
+        background-color: $main-color-theme;
+      }
+    }
+  }
+
+}

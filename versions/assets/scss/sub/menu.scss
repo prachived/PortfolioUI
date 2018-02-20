@@ -1,0 +1,265 @@
+/*-----------------------
+    Menu
+------------------------*/
+
+/* Main Menu */
+.menu {
+  padding-top: 50px;
+  text-align: center;
+  ul {
+    margin-top: 0;
+  }
+  li {
+    display: inline-block;
+    a {
+      @include transition(0.5s);
+      &:hover {
+        color: white;
+        .header-menu-item {
+          color: white;
+        }
+      }
+    }
+  }
+  img {
+    margin: 10px 5px 0 5px;
+    vertical-align: baseline;
+  }
+  .header-menu-item {
+    margin: 15px 0 0;
+    @include transition(0.5s);
+  }
+
+  .single-page & {
+    padding: 0;
+  }
+
+}
+
+/* Fixed Menu */
+.top-menu {
+  position: fixed;
+  top: -62px;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  text-align: center;
+  color: $main-color-theme;
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 0;
+  @include transition(0.5s);
+  ul {
+    margin: auto;
+    background-color: white;
+  }
+  li {
+    padding: 0;
+  }
+
+  @include breakpoint(l) {
+    display: none;
+  }
+
+  .single-page & {
+    position: relative;
+    top: 0;
+    left: 0;
+    ul li a {
+      padding: 16px 16px 18px;
+    }
+  }
+
+}
+
+.menu-fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 999;
+  border-bottom: 1px solid #e0e6e9;
+
+  a {
+    background: transparent;
+    &:hover, &:focus {
+      background: transparent;
+      color: $main-color-hover-theme;
+    }
+  }
+
+  ul {
+    margin: auto;
+    background-color: white;
+    li {
+      a {
+        padding: 18px 16px 20px;
+        display: inline-block;
+      }
+      &.active a {
+        &:after {
+          content: "";
+          background-color: $main-color-hover-theme;
+          width: 100%;
+          height: 2px;
+          display: block;
+          position: relative;
+          top: 20px;
+          @include transition(0.5s);
+        }
+      }
+    }
+  }
+
+  @include breakpoint(l) {
+    display: none;
+    position: inherit;
+    top: inherit;
+    left: inherit;
+    width: inherit;
+    z-index: inherit;
+    border-bottom: none;
+
+    img {
+      display: block;
+    }
+
+    ul {
+      margin: auto;
+      background-color: inherit;
+      li {
+        padding: 0;
+      }
+    }
+
+  }
+
+}
+
+.nav > li > a {
+  &:hover {
+    background: transparent;
+    color: $main-color-hover-theme;
+  }
+}
+
+/* Popup Foto */
+.popup-photo {
+  visibility: visible;
+  opacity: 1;
+  z-index: 2;
+  display: none;
+  position: absolute;
+  top: -34px;
+  right: -49%;
+  @include transition(0.5s);
+
+  .btn-close {
+    position: absolute;
+    top: 5px;
+    right: 4px;
+    font-size: 14px;
+    color: #c0c0c0;
+    cursor: pointer;
+    @include transition(0.5s);
+  }
+  img {
+    width: 100%;
+    height: 136px;
+    display: block;
+    margin: auto;
+  }
+  .popup-text {
+    color: $main-color-theme;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 45px;
+    text-align: center;
+    height: 65px;
+    margin-bottom: 0;
+    display: inherit;
+  }
+
+  .popup-box {
+    width: 176px;
+    height: 199px;
+    background-color: white;
+    visibility: visible;
+    opacity: 1;
+    z-index: 2;
+    position: absolute;
+    top: -8px;
+    right: 0;
+    padding: 20px 20px 35px 20px;
+
+    &:after, &:before {
+      right: 100%;
+      top: 32%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+      visibility: visible;
+      opacity: 1;
+    }
+    &:before {
+      border-width: 9px;
+      margin-top: -9px;
+    }
+    &:after {
+      border-color: rgba(255, 255, 255, 0);
+      border-right: 8px #fff;
+      margin-top: -8px;
+    }
+
+  }
+
+  .shadow-popup {
+    display: inline-block !important;
+    position: absolute;
+    top: 0;
+    width: 176px;
+    right: 7px;
+    padding: 20px 20px 178px 20px;
+    background-color: black;
+    visibility: visible !important;
+    opacity: 0.1 !important;
+    z-index: 1;
+    @include transition(0.5s);
+
+    &:after, &:before {
+      right: 100%;
+      top: 32%;
+      border: solid transparent;
+      content: " ";
+      height: 0;
+      width: 0;
+      position: absolute;
+      pointer-events: none;
+    }
+
+    &:before {
+      border-width: 6px;
+      margin-top: -9px;
+    }
+
+    &:after {
+      visibility: visible;
+      border-color: rgba(255, 255, 255, 0);
+      border-right-color: rgba(0, 0, 0, 1) !important;
+    }
+
+    &:after {
+      border-width: 8px;
+      margin-top: -8px;
+    }
+
+  }
+
+}
+
+.open-popup {
+  display: inline-block;
+}

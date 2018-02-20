@@ -1,0 +1,267 @@
+/* ==============================================
+
+Template: My Desktop
+Version: 1.0
+Author:	UKIE WEB
+
+--------------------------------------------------
+
+[Table of contents]
+
+1. General setting
+2. Home / .header
+
+================================================ */
+
+/*------------------------------------------------------------------
+[1. General setting]
+*/
+
+* {
+    font-family: 'Raleway', sans-serif;
+}
+
+ul {
+    padding: 0;
+    margin-top: 50px;
+}
+
+li {
+    list-style-type: none;
+}
+
+form {
+    box-shadow: none;
+}
+
+input {
+    border-radius: 0;
+    box-shadow: none !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+textarea {
+    box-shadow: none !important;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+h1, h2, h3 {
+    font-weight: 700;
+    color: #6c7988;
+}
+
+h1 {
+    font-size: 40px;
+    line-height: 45px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 30px;
+    line-height: 21px;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 48px;
+}
+
+a,
+a:hover,
+a:active,
+a:visited {
+    text-decoration: none;
+
+}
+
+a {
+    color: #6c7988;
+}
+
+a:hover {
+    color: #a2c6c3;
+}
+
+a {
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+a:hover .header-menu-item {
+    color: #a2c6c3;
+}
+
+.head {
+    background-color: #e0e6e9;
+}
+
+.menu {
+    padding-top: 50px;
+    text-align: center;
+}
+
+.menu img {
+    margin: 10px 5px 0px 5px;
+    vertical-align: baseline;
+}
+
+.menu ul {
+    margin-top: 0;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.desktop {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.desktop img {
+    display: block;
+    margin: auto;
+}
+
+.desktop h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.padding-none {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+#menu.fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    border-bottom: 1px solid rgba(108, 121, 136, 0.1);
+}
+
+.footer {
+    text-align: center;
+    padding-top: 140px;
+    padding-bottom: 140px;
+}
+
+
+/*------------------------------------------------------------------
+[1. Desktop style]
+*/
+.desktop-style {
+    text-align: center;
+    padding: 100px 0;
+}
+
+.style-text {
+    color: #02263e;
+    font: 700 18px Raleway;
+    margin-bottom: 0;
+}
+
+.style-item {
+    display: inline-block;
+    margin: 20px;
+    position: relative;
+}
+
+.style-item img {
+    display: block;
+    max-width: 425px;
+    position: relative;
+
+}
+
+.style-title {
+    color: #02263e;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 45px;
+    margin-top: 0;
+    margin-bottom: 50px;
+}
+
+.rights {
+    color: #02263e;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 45px;
+    margin-top: 50px;
+}
+
+.hover-content-style {
+    background-color: rgba(108, 121, 136, 0.1);
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 30px;
+    position: absolute;
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    -ms-flex-align: center;
+    visibility: hidden;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.style-item:hover .hover-content-style {
+    visibility: visible;
+    background-color: rgba(108, 121, 136, 0.8);
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -ms-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+}
+
+.style-item:hover .style-orange {
+    visibility: visible;
+    background-color: rgba(245, 127, 66, 0.8);
+
+}
+
+.style-item:hover .style-blue {
+    background-color: rgba(2, 173, 201, 0.8);
+    visibility: visible;
+
+}
+
+.style-item:hover .style-green {
+    background-color: rgba(220, 228, 83, 0.8);
+    visibility: visible;
+
+}
+
+
+.copyright {
+    margin-top: 120px;
+    margin-bottom: -75px;
+    border-top: 1px solid rgba(108, 121, 136, 0.1);
+    text-align: center;
+}
+
+.copyright-txt {
+    margin: 20px;
+    color: #6c7988;
+}

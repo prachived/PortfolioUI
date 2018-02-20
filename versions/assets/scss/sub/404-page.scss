@@ -1,0 +1,42 @@
+/*-----------------------
+    404 page
+------------------------*/
+.error-img {
+  text-align: center;
+  margin: auto;
+  display: block;
+  padding-top: 200px;
+  @include breakpoint(xx) {
+    padding-top: 50px;
+  }
+}
+
+.error-title {
+  span {
+    display: block;
+    font-size: 102px;
+    font-weight: 700;
+    line-height: 105px;
+    text-transform: uppercase;
+  }
+}
+
+.error-page {
+  margin-top: 120px;
+  margin-bottom: 120px;
+  text-align: left;
+  .btn-download {
+    float: none;
+    margin-right: 15px;
+  }
+  @include breakpoint(xx) {
+    margin-top: 60px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+
+.error-text {
+  color: $main-color-theme;
+  margin-bottom: 24px;
+}

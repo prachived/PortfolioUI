@@ -1,0 +1,185 @@
+/*-----------------------
+    Portfolio
+------------------------*/
+.portfolio-section {
+  background-color: #ffffff;
+}
+
+.controls {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.filter {
+  color: $main-color-theme;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 48px;
+  border: none;
+  background-color: white;
+  margin: auto;
+  display: inline-block;
+  outline: none;
+  @include transition(0.5s);
+  &:hover {
+    color: $main-color-hover-theme;
+  }
+}
+
+.active {
+  border-bottom: 1px solid $main-color-hover-theme;
+  color: $main-color-theme;
+}
+
+.mix {
+  width: 32%;
+  margin: 0;
+  padding: 0;
+  float: left;
+  display: none;
+  margin-bottom: 2%;
+
+  &:first-of-type {
+    width: 66%;
+    margin-right: 2%;
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.works-grid {
+  border: 0;
+  margin: 0;
+  outline: none;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+.work-item-cont {
+  background-color: rgba(108, 121, 136, 0.1);
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 30px;
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  justify-content: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  -ms-flex-align: center;
+  visibility: hidden;
+  @include transition(0.5s);
+}
+
+.popup-content {
+  display: block;
+  position: relative;
+  &:hover {
+    .work-item-cont {
+      visibility: visible;
+      background-color: rgba(108, 121, 136, 0.7);
+    }
+  }
+}
+
+.btn-general {
+  margin: 24px auto auto;
+  display: block;
+}
+
+.single-page {
+
+  .mix {
+    width: 31%;
+    padding: 0;
+    float: left;
+    display: none;
+    margin: 1%;
+
+    @include breakpoint(xx) {
+      width: 48%;
+    }
+
+    @include breakpoint(lx) {
+      width: 100%;
+      margin: 0 0 5%;
+    }
+
+    &:first-of-type {
+      width: 31%;
+
+      @include breakpoint(xx) {
+        width: 48%;
+      }
+
+      @include breakpoint(lx) {
+        width: 100%;
+        margin: 0 0 5%;
+      }
+    }
+
+  }
+
+}
+
+
+/* modal box */
+.box-opened {
+  width: 500px;
+  margin: auto;
+}
+
+.modal-box-img {
+  text-align: center;
+  margin-top: 30px;
+  position: relative;
+}
+
+.modal-box-txt {
+  margin: auto;
+  padding: 20px 10px;
+  background-color: white;
+  text-align: center;
+}
+
+.mfp-close-btn-in .mfp-close {
+  color: white;
+}
+
+@include breakpoint(l) {
+  .mfp-container .mfp-arrow {
+    display: none;
+  }
+}
+
+@include breakpoint(s) {
+  .box-opened {
+    width: 98%;
+  }
+
+  .modal-box-txt {
+    width: 100%;
+  }
+
+  .modal-box-img {
+    width: 100%;
+  }
+}
+
+@include breakpoint(ss) {
+  .mfp-close {
+    right: -14px;
+    top: -10px;
+  }
+
+  .mfp-close:active {
+    top: -10px;
+  }
+}
+

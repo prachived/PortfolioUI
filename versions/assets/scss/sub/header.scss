@@ -1,0 +1,49 @@
+/*-----------------------
+    Home (header)
+------------------------*/
+
+.header {
+  padding: 100px 0;
+  background-color: $main-bg-theme;
+  .socials {
+    text-align: center;
+
+    a {
+      color: $main-color-theme;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 45px;
+      margin-right: 20px;
+      margin-left: 20px;
+
+      &:hover {
+        color: white;
+      }
+    }
+  }
+  .header-title {
+    position: relative;
+
+    .camera-icon {
+      position: absolute;
+      top: -15px;
+      right: -20px;
+      font-size: 20px;
+      outline: none;
+      border: none;
+      @include breakpoint(xxx) {
+        display: none;
+      }
+      &:hover {
+        color: #ffffff;
+      }
+    }
+  }
+
+  .single-page & {
+    padding: 0;
+    background-color: transparent;
+    border-bottom: 1px solid #e0e6e9;
+  }
+
+}

@@ -1,0 +1,55 @@
+/* ------------------------------------------------------------------
+
+[Master Stylesheet]
+
+Project: My Desktop
+Version: 1.0
+Last change: 26/08/16
+Author:	UKIE WEB
+
+
+[Table of contents]
+
+   1. - General setting
+   2. - Home | .header
+   3. - Menu | .menu
+   4. - About | .about-section
+   5. - Resume | .resume-section
+   6. - Progress Bar | .progress-wrapper
+   7. - Portfolio | .portfolio-section
+   8. - Blog | .blog-section
+   9. - Contacts | .contact-section
+   10. - Copyright | .copyright
+   11. - Page 404
+   12. - Pagination
+   13. - Widget
+   14. - Scroll to Top
+   15. - Preloade Section Style
+
+
+[Color codes]
+
+# Main color: #dce453
+# Second color: #02263e
+# Footer background color: #f0f3f3
+
+
+[Typography]
+
+Body copy:   14px/20px Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif;
+Header1:     40px/45px Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif;
+Header2:     30px/30px Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif;
+Header3:     24px/32px Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif;
+Header4:     16px/26px Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif;
+Input, textarea:   14px/20px Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif;
+Sidebar heading:   24px/32px Raleway, "Helvetica Neue", Helvetica, Arial, sans-serif
+-------------------------------------------------------------------*/
+
+$main-color-theme: #02263e;
+$main-color-hover-theme: #dce453;
+$main-bg-theme: #dce453;
+$footer-bg: #f0f3f3;
+$second-color: #f3f7f7;
+$scrol-to-top:#30404d;
+
+@import "main";

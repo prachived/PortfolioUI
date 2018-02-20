@@ -1,0 +1,30 @@
+/* ==============================================
+
+Template: My Desktop
+Version: 1.0
+Author:	UKIE WEB
+
+================================================ */
+
+@media ( max-width: 749px) {
+    .padding-none {
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .footer {
+        padding-top: 70px;
+        padding-bottom: 70px;
+    }
+
+    .style-item img {
+        width: 100%;
+    }
+}
+
+@media ( max-width: 762px) {
+
+    .style-item {
+        margin: 20px 0 20px 0;
+    }
+}

@@ -1,0 +1,19 @@
+/*-----------------------
+    Copyright
+------------------------*/
+.copyright {
+  margin-top: 60px;
+  border-top: 1px solid rgba(108, 121, 136, 0.1);
+  text-align: center;
+  padding: 20px 15px;
+  color: $main-color-theme;
+
+  i {
+    font-size: 10px;
+  }
+
+  .single-page & {
+    margin-top: 0;
+  }
+
+}
